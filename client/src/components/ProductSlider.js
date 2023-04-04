@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductSlider = () => {
+const ProductSlider = ( {data} ) => {
   return <div>ProductSlider</div>;
 };
 
