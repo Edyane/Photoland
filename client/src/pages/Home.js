@@ -8,7 +8,9 @@ import ProductSlider from '../components/ProductSlider';
 
 const Home = () => {
   //Get new projects
-  const { data } = useFetch('/products?populate=*&filters[is*New]=true');
+  // const { data } = useFetch('/products?populate=*&filters[is*New]=true');
+  const { data } = useFetch('/products?populate=*');
+  console.log(data);
 
   return (
     <div className="mb-16">
