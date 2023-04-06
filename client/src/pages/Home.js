@@ -10,7 +10,7 @@ const Home = () => {
   //Get new projects
   // const { data } = useFetch('/products?populate=*&filters[is*New]=true');
   const { data } = useFetch('/products?populate=*');
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="mb-16">
