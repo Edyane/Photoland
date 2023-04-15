@@ -31,7 +31,7 @@ const ProductSlider = ({ data }) => {
         spaceBetween: 30
       },
       1440: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         // slidesPerView: 5,
         spaceBetween: 30
       },
