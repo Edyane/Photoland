@@ -10,6 +10,7 @@ import '../slider.css';
 
 //Import Required Modules
 import { Pagination, Navigation } from 'swiper';
+
 //Components
 import Product from '../components/Product';
 
@@ -31,7 +32,7 @@ const ProductSlider = ({ data }) => {
         spaceBetween: 30
       },
       1440: {
-        slidesPerView: 2,
+        slidesPerView: 5,
         // slidesPerView: 5,
         spaceBetween: 30
       },
@@ -39,7 +40,8 @@ const ProductSlider = ({ data }) => {
     pagination = {{
       clickable: true,
     }}
-    className='productSlider mx-auto max-w-[360px] md:max-w-lg x1:max-w-[1410px]'
+    // className='productSlider mx-auto w-[360px] md:max-w-lg x1:max-w-[1410px]';
+    // className='productSlider mx-auto w-[1160px]'
     >
       <>
         {data?.map((product) => {
