@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 //Import Swiper Styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import '../slider.css';
 
 //Import Required Modules
@@ -41,7 +42,9 @@ const ProductSlider = ({ data }) => {
       clickable: true,
     }}
     // className='productSlider mx-auto w-[360px] md:max-w-lg x1:max-w-[1410px]';
-    // className='productSlider mx-auto w-[1160px]'
+    // 
+
+
     >
       <>
         {data?.map((product) => {
