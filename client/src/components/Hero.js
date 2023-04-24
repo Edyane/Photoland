@@ -15,11 +15,11 @@ const Hero = () => {
             <CategoryNav />
           </div>
 
-          <div className="w-full max-w-lg bg-pink-200 lg:max-w-[734px] mx-auto">
+          <div className="w-full max-w-lg lg:max-w-[734px] mx-auto">
             <MainSlider />
           </div>
 
-          <div>
+          <div classname="flex flex-col gap-y-[30px] w-full max-w-lg mx-auto h-[500px] bg-pink-50/10">
             <div>Promo 1</div>
             <div>Promo 2</div>
           </div>
