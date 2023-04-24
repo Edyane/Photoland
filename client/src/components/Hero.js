@@ -15,7 +15,7 @@ const Hero = () => {
             <CategoryNav />
           </div>
 
-          <div className="w-full max-w-lg bg-pink-200">
+          <div className="w-full max-w-lg bg-pink-200 lg:max-w-[734px] mx-auto">
             <MainSlider />
           </div>
 
