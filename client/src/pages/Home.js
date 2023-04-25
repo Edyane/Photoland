@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import Hero from "../components/Hero";
-import LatestProducts from '../components/LatestProducts.js';
+import LatestProducts from "../components/LatestProducts.js";
 
 const Home = () => {
-  return (
-    <section>
-      <Hero />
-      <LatestProducts />
-    </section>
-  )
+	return (
+		<section>
+			<Hero />
+			<LatestProducts />
+		</section>
+	);
 };
 
 export default Home;
