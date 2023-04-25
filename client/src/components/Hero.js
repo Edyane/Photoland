@@ -27,12 +27,10 @@ const Hero = () => {
 								<div className="text-[20px] uppercase font-medium leading-tight mb-4">
 									Save 35% all dskr cameras
 								</div>
-
 								<a href="#" className="uppercase text-accent">
 									Shop now
 								</a>
 							</div>
-
 							<img className="absolute z-20 -top-2 -right-4" src={PromoImg1} alt="" />
 						</div>
 
@@ -41,15 +39,13 @@ const Hero = () => {
 							{/* Text */}
 							<div className="flex flex-col max-w-[144px] h-full justify-center">
 								<div className="text-[20px] uppercase font-medium leading-tight mb-4">
-									Save 35% all dskr cameras
+									Save 25% mirrorless cameras
 								</div>
-
 								<a href="#" className="uppercase text-accent">
 									Shop now
 								</a>
 							</div>
-
-							<img className="absolute z-20 -top-2 -right-4" src={PromoImg1} alt="" />
+							<img className="absolute z-20 top-4 -right-6" src={PromoImg2} alt="" />
 						</div>
 					</div>
 				</div>
