@@ -19,7 +19,7 @@ const Hero = () => {
 					</div>
 
 					{/* Promos */}
-					<div className="flex flex-col gay-y-[30px] w-full max-w-lg mx-auto h-[500px] bg-pink-50/10">
+					<div className="flex flex-col gap-y-[30px] w-full max-w-lg mx-auto h-[500px]">
 						{/* Promo 1 */}
 						<div className="grad flex-1 h-[250px] rounded-[8px] overflow-hidden relative p-6">
 							{/* Text */}
