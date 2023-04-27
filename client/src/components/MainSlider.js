@@ -10,6 +10,33 @@ import "../slider.css";
 import { Pagination } from "swiper";
 import CameraImg from "../img/camera.png";
 
+const sliderData = [
+	{
+		img: CameraImg,
+		pretitle: 'Special offer',
+		titlePart1: 'Save 20%',
+		titlePart2: 'On your',
+		titlePart3: 'first order',
+		btnText: 'Shop now',
+	},
+	{
+		img: CameraImg,
+		pretitle: 'Special offer',
+		titlePart1: 'Save 20%',
+		titlePart2: 'On your',
+		titlePart3: 'first order',
+		btnText: 'Shop now',
+	},
+	{
+		img: CameraImg,
+		pretitle: 'Special offer',
+		titlePart1: 'Save 20%',
+		titlePart2: 'On your',
+		titlePart3: 'first order',
+		btnText: 'Shop now',
+	},
+];
+
 const MainSlider = ({ data }) => {
 	return (
 		<Swiper
@@ -18,10 +45,12 @@ const MainSlider = ({ data }) => {
 			pagination={{
 				clickable: true,
 			}}
-			className="mainSlider mx-auto max-w-[360px] md:max-w-lg xl:max-w-[1410px]"
+			className="mainSlider"
 		>
 			<>
-				<SwiperSlide>slide</SwiperSlide>
+				{sliderData.map((slide, index) => {
+					return <SwiperSlide key={index}>slide</SwiperSlide>
+				})}
 			</>
 		</Swiper>
 	);
