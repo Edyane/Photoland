@@ -35,8 +35,7 @@ const ProductSlider = ({ data }) => {
       pagination={{
         clickable: true,
       }}
-      className="productSlider mx-auto max-w-[1440px]"
-      // className="productSlider mx-auto max-w-[360px] md:max-w-lg x1:max-w-[1410px]"
+         className="productSlider mx-auto max-w-[360px] md:max-w-lg xl:max-w-[1410px]"
       >
 
 
