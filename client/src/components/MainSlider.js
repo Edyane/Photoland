@@ -61,6 +61,9 @@ const MainSlider = ({ data }) => {
 										{slide.titlePart2} <br />
 										{slide.titlePart3}
 									</div>
+									<div>
+										<button class="btn btn-accent mx-auto lg:mx-0">Shop now</button>
+									</div>
 								</div>
 								<div className="flex-1">
 									<img className="xl:absolute xl:-right-16 xl:-bottom-12" src={slide.img} alt=""/>
