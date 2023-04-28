@@ -45,14 +45,15 @@ const MainSlider = ({ data }) => {
 			pagination={{
 				clickable: true,
 			}}
-			className="mainSlider h-full bg-primary xl:bg-mainSlider xl:bg-no-repeat max-w-lg lg:max-w:none rounded-[8px] overflow-hidden drop-shadow-2x1"
+			className="mainSlider h-full bg-primary xl:bg-mainSlider xl:bg-no-repeat
+			max-w-lg lg:max-w-none rounded-[8px] overflow-hidden drop-shadow-2x1"
 		>
 			<>
 				{sliderData.map((slide, index) => {
 					return (
 						<SwiperSlide key={index}>
 							<div className="flex flex-col lg:flex-row h-full p-[20px] md:p-[60px]">
-								<div className="w-full lg:flex-l">
+								<div className="w-full lg:flex-1">
 									<div className="uppercase mb-1 text-center lg:text-left">
 										{slide.pretitle}
 									</div>
