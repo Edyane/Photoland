@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Logo from "../img/logo.png";
 
 import { SlBag } from "react-icons/sl";
@@ -9,8 +9,10 @@ import { Link } from "react-router-dom";
 import SearchForm from "../components/SearchForm";
 import CategoryNavMobile from "../components/CategoryNavMobile";
 import Cart from "../components/Cart";
+import { CartContext } from "../context/CartContext";
 
 const Header = () => {
+	console.log(useContext(CartContext))
 	return (
 		<header>
 			<div className="container mx-auto">
@@ -48,6 +50,7 @@ const Header = () => {
 				<div className="lg:hidden">
 					<SearchForm />
 				</div>
+
 			</div>
 		</header>
 	);
