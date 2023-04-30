@@ -30,6 +30,19 @@ const Header = () => {
 					<div className="hidden w-full x1:flex x1:max-w-[734px]">
 						<SearchForm />
 					</div>
+
+					<div>
+						<div>Need help? 123 456 789</div>
+
+						<div className="relative cursor-pointer">
+							<SlBag className="text-2x1" />
+							<div>2</div>
+						</div>
+
+						<div className="bg-[#0e0f10] shadow-x1 fixed top-0 bottom-0 w-full z-10 md:max-w-[500px] transition-all duration-300">
+							<Cart />
+						</div>
+					</div>
 				</div>
 
 				<div className="lg:hidden">
