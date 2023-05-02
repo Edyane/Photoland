@@ -12,8 +12,7 @@ import Cart from "../components/Cart";
 import { CartContext } from "../context/CartContext";
 
 const Header = () => {
-	console.log(useContext(CartContext))
-	return (
+	const { isOpen, setIsOpen } = useContext(CartContext);
 		<header>
 			<div className="container mx-auto">
 				<div>
@@ -36,12 +35,14 @@ const Header = () => {
 					<div>
 						<div>Need help? 123 456 789</div>
 
-						<div className="relative cursor-pointer">
+						<div onClick={()=> setIsOpen(!isOpen)} className="relative cursor-pointer">
 							<SlBag className="text-2x1" />
 							<div>2</div>
 						</div>
 
-						<div className="bg-[#0e0f10] shadow-x1 fixed top-0 bottom-0 w-full z-10 md:max-w-[500px] transition-all duration-300">
+						<div className={`
+							${isOpen ? 'right-0' : '-right-full'}
+							bg-[#0e0f10] shadow-x1 fixed top-0 bottom-0 w-full z-10 md:max-w-[500px] transition-all duration-300`}>
 							<Cart />
 						</div>
 					</div>
@@ -53,7 +54,7 @@ const Header = () => {
 
 			</div>
 		</header>
-	);
+	
 };
 
 export default Header;
