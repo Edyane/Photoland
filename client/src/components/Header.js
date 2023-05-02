@@ -13,7 +13,7 @@ import { CartContext } from "../context/CartContext";
 
 const Header = () => {
 	const { isOpen, setIsOpen } = useContext(CartContext);
-	<header className="bg-primary py-6 fixed w-full top-0 z-40">
+	<header className="bg-primary py-6 fixed w-full top-0 z-40 lg:relative x1:mb-[30px]">
 		<div className="container mx-auto">
 			<div>
 				<div>
