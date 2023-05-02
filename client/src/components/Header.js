@@ -15,7 +15,7 @@ const Header = () => {
 	const { isOpen, setIsOpen } = useContext(CartContext);
 	<header className="bg-primary py-6 fixed w-full top-0 z-40 lg:relative x1:mb-[30px]">
 		<div className="container mx-auto">
-			<div>
+			<div className="flex flex-row gap-4 lg:items-center justify-between mb-4 lg:mb-0">
 				<div>
 					<FiMenu />
 				</div>
