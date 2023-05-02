@@ -13,48 +13,51 @@ import { CartContext } from "../context/CartContext";
 
 const Header = () => {
 	const { isOpen, setIsOpen } = useContext(CartContext);
-		<header className="bg-primary py-6 fixed w-full top-0 z-40">
-			<div className="container mx-auto">
+	<header className="bg-primary py-6 fixed w-full top-0 z-40">
+		<div className="container mx-auto">
+			<div>
 				<div>
-					<div>
-						<FiMenu />
-					</div>
-
-					<div>
-						<CategoryNavMobile />
-					</div>
-
-					<Link>
-						<img src={Logo} alt="" />
-					</Link>
-
-					<div className="hidden w-full x1:flex x1:max-w-[734px]">
-						<SearchForm />
-					</div>
-
-					<div>
-						<div>Need help? 123 456 789</div>
-
-						<div onClick={()=> setIsOpen(!isOpen)} className="relative cursor-pointer">
-							<SlBag className="text-2x1" />
-							<div>2</div>
-						</div>
-
-						<div className={`
-							${isOpen ? 'right-0' : '-right-full'}
-							bg-[#0e0f10] shadow-x1 fixed top-0 bottom-0 w-full z-10 md:max-w-[500px] transition-all duration-300`}>
-							<Cart />
-						</div>
-					</div>
+					<FiMenu />
 				</div>
 
-				<div className="lg:hidden">
+				<div>
+					<CategoryNavMobile />
+				</div>
+
+				<Link>
+					<img src={Logo} alt="" />
+				</Link>
+
+				<div className="hidden w-full x1:flex x1:max-w-[734px]">
 					<SearchForm />
 				</div>
 
+				<div>
+					<div>Need help? 123 456 789</div>
+
+					<div
+						onClick={() => setIsOpen(!isOpen)}
+						className="relative cursor-pointer"
+					>
+						<SlBag className="text-2x1" />
+						<div>2</div>
+					</div>
+
+					<div
+						className={`
+							${isOpen ? "right-0" : "-right-full"}
+							bg-[#0e0f10] shadow-x1 fixed top-0 bottom-0 w-full z-10 md:max-w-[500px] transition-all duration-300`}
+					>
+						<Cart />
+					</div>
+				</div>
 			</div>
-		</header>
-	
+
+			<div className="lg:hidden">
+				<SearchForm />
+			</div>
+		</div>
+	</header>;
 };
 
 export default Header;
