@@ -8,7 +8,6 @@ import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Search from "./pages/Search";
 
-//Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
