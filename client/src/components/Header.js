@@ -13,6 +13,7 @@ import { CartContext } from "../context/CartContext";
 
 const Header = () => {
 	const { isOpen, setIsOpen } = useContext(CartContext);
+	const [catNavMobile, setCatnavMobile] = useState(false);
 	return (
 		<header className="bg-primary py-6 fixed w-full top-0 z-40 lg:relative xl:mb-[30px]">
 			<div className="container mx-auto">
@@ -21,7 +22,7 @@ const Header = () => {
 						<FiMenu />
 					</div>
 
-					<div>
+					<div className={`${ catNavMobile ? 'left-0' : '-left-full'} fixed top-0 bottom-0 z-30 w-full h-screen transition-all duration-200`}>
 						<CategoryNavMobile />
 					</div>
 
