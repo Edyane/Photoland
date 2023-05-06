@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CategoryNavMobile = () => {
+const CategoryNavMobile = ({setCatnavMobile}) => {
   return <div>CategoryNavMobile</div>;
 };
 
