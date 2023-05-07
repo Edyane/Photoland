@@ -34,15 +34,15 @@ const Header = () => {
 						<SearchForm />
 					</div>
 
-					<div>
-						<div>Need help? 123 456 789</div>
+					<div className="flex items-center gap-x-[10px]">
+						<div className="hidden xl:flex uppercase">Need help? 123 456 789</div>
 
 						<div
 							onClick={() => setIsOpen(!isOpen)}
 							className="relative cursor-pointer"
 						>
 							<SlBag className="text-2x1" />
-							<div>2</div>
+							<div className="bg-accent text-primary absolute w-[18px] h-[18px] rounded-full top-3 -right-1 text-[13px] flex justify-center items-center font-bold tracking-[-0.1em]">2</div>
 						</div>
 
 						<div
