@@ -1,14 +1,18 @@
 import React from 'react';
 
 import { FiSearch } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const SearchForm = () => {
+  const navigate = useNavigate();
+  const {searchTerm, setSearchTerm} = useNavigate('');
+
   return (
-    <form>
+    <form className=" w-full relative">
       <input className="input" type="text" placeholder="Search for a product..." />
 
-      <button>
-        <FiSearch />
+      <button className="btn btn-accent absolute top-0 right-0 rounded-tl-none rounded-bl-none">
+        <FiSearch className="text-xl" />
       </button>
     </form>
   );
