@@ -11,7 +11,6 @@ const CategoryNav = () => {
 				<div className="bg-accent py-4 text-primary uppercase font-semibold flex items-center justify-center">Browse Categories</div>
 				<div className="flex flex-col gap-y-6 p-6">
 					{data?.map(category => {
-						console.log(category);
 						return <Link to={`/products/${category.id}`} className="cursor-pointer uppercase" key={category.id}>{category.attributes.title}</Link>
 					})}
 				</div>
