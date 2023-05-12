@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from "react-router-dom";
 
 import { FiSearch } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
@@ -8,11 +9,16 @@ const SearchForm = () => {
 	const { searchTerm, setSearchTerm } = useNavigate("");
 
 	const handleSearchInput = (e) => {
-		console.log(e.target.value);
+		setSearchTerm(e.target.value);
 	};
 
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(searchTerm);
+	}
+
 	return (
-		<form className=" w-full relative">
+		<form onSubmit={handleSubmit} xlassName=" w-full relative">
 			<input
 				onChange={handleSearchInput}
 				className="input"
