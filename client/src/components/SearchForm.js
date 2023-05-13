@@ -15,10 +15,15 @@ const SearchForm = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log(searchTerm);
+		if(searchTerm.length > 0) {
+			navigate(`/search?query=${searchTerm}`);
+		} else {
+			console.log('Please search for something')
+		}
 	}
 
 	return (
-		<form onSubmit={handleSubmit} xlassName=" w-full relative">
+		<form onSubmit={handleSubmit} lassName=" w-full relative">
 			<input
 				onChange={handleSearchInput}
 				className="input"
@@ -26,7 +31,7 @@ const SearchForm = () => {
 				placeholder="Search for a product..."
 			/>
 
-			<button className="btn btn-accent absolute top-0 right-0 rounded-tl-none rounded-bl-none">
+			<button className="btn btn-accent absolute top-0 right-0 rounded-t1-none rounded-b1-none">
 				<FiSearch className="text-xl" />
 			</button>
 		</form>
