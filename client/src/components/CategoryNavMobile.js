@@ -1,5 +1,5 @@
 import React from "react";
-import {FiX} from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 
 const CategoryNavMobile = ({ setCatnavMobile }) => {
 	return (
