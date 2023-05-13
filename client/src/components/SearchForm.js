@@ -23,7 +23,7 @@ const SearchForm = () => {
 	}
 
 	return (
-		<form onSubmit={handleSubmit} lassName=" w-full relative">
+		<form onSubmit={handleSubmit} className=" w-full relative">
 			<input
 				onChange={handleSearchInput}
 				className="input"
