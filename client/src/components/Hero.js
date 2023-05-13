@@ -31,7 +31,11 @@ const Hero = () => {
 									Shop now
 								</a>
 							</div>
-							<img className="absolute z-20 -top-2 -right-4" src={PromoImg1} alt="" />
+							<img
+								className="absolute z-20 -top-2 -right-4"
+								src={PromoImg1}
+								alt=""
+							/>
 						</div>
 
 						{/* Promo 2 */}
@@ -45,7 +49,11 @@ const Hero = () => {
 									Shop now
 								</a>
 							</div>
-							<img className="absolute z-20 top-4 -right-6" src={PromoImg2} alt="" />
+							<img
+								className="absolute z-20 top-4 -right-6"
+								src={PromoImg2}
+								alt=""
+							/>
 						</div>
 					</div>
 				</div>
