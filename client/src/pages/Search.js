@@ -18,7 +18,17 @@ const Search = () => {
 			<div className="container mx-auto">
 				<div className="flex gap-x-[30px]">	
 					<CategoryNav />				
-					
+					<div>
+						<div className="py-3 text-xl uppercase text-center lg:text-left">
+							{data?.length > 0 ? `${data.length} results for ${searchTerm}` : `no results found for ${searchTerm}`}
+						</div>
+
+						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[15px] md:gap-[30px]">
+							{data?.map(product =>{
+								return <Product product={product} key={product.id} />
+							})}
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
