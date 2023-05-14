@@ -23,7 +23,6 @@ const SearchForm = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(searchTerm);
 		if (searchTerm.length > 0) {
 			navigate(`/search?query=${searchTerm}`);
 			document.querySelector("input").value = '';
