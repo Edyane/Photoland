@@ -1,7 +1,7 @@
 import React from "react";
 import { FiX } from "react-icons/fi";
 
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
 const CategoryNavMobile = ({ setCatnavMobile }) => {
@@ -17,9 +17,11 @@ const CategoryNavMobile = ({ setCatnavMobile }) => {
                 <FiX className="text-3x1" />
             </div>
 
-			<div></div>
-			CategoryNavMobile
-
+			<div>
+				{data?.map((category) => {
+					return <Link>{category.attributes.title}</Link>
+				})}
+			</div>
 		</div>
 	);
 };
