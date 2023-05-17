@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import useFetch from "../hooks/useFetch";
+import { useFetch } from "../hooks/useFetch"
 import CategoryNav from "../components/Product";
 
 const Products = () => {
