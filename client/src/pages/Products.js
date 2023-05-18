@@ -18,9 +18,11 @@ const Products = () => {
 					<main>
 						<div>title</div>
 
-						<div>{data?.map(product => {
+						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[15px] md:gap-[30px]">
+							{data?.map(product => {
 							return <Product product={product} key={product.id} />
-						})}</div>
+							})}
+						</div>
 					</main>
 				</div>
 			</div>
