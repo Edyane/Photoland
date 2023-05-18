@@ -7,7 +7,9 @@ import Product from "../components/Product";
 
 const Products = () => {
 	const { id } = useParams();
-	console.log(id);
+
+	//get products based on category id
+	const {data} = useFetch(`/products?populate=*&filters[categories][id][$eq]=${id}`);
 	return (
 		<div className="mb-16 pt-40 lg:pt-0">
 			<div className="container mx-auto">
@@ -16,7 +18,9 @@ const Products = () => {
 					<main>
 						<div>title</div>
 
-						<div>product grid</div>
+						<div>{data?.map(product => {
+							return <Product product={product} key={product.id} />
+						})}</div>
 					</main>
 				</div>
 			</div>
