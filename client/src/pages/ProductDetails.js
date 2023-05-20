@@ -12,7 +12,7 @@ const ProductDetails = () => {
 	console.log(id);
 	//get product data base on the id
 	const { data } = useFetch(`/products?populate=*&filters[id][$eq]=${id}`);
-	if(!data) {
+	if (!data) {
 		return <div className="container mx-auto">Loading...</div>;
 	}
 	return (
@@ -20,12 +20,26 @@ const ProductDetails = () => {
 			<div className="container mx-auto">
 				<div>
 					<div>
-						<img src={`http://localhost:1337${data[0].attributes.image.data.attributes.url}`} alt="" className="w-full max-w-[65%]"/>
+						<img
+							src={`http://localhost:1337${data[0].attributes.image.data.attributes.url}`}
+							alt=""
+							className="w-full max-w-[65%]"
+						/>
 					</div>
 				</div>
 
 				<div>
-					<div>{data[0].attributes.categories.data[0].attributes.title}</div>
+					<div>
+						{data[0].attributes.categories.data[0].attributes.title}{" "}
+						cameras
+					</div>
+
+					<h2>{data[0].attributes.title}</h2>
+					<p>{data[0].attributes.description}</p>
+
+					<div>
+						<div>{data[0].attributes.price}</div>
+					</div>
 				</div>
 				<RelatedProducts />
 			</div>
