@@ -28,16 +28,16 @@ const ProductDetails = () => {
 					</div>
 				</div>
 
-				<div className="flex-1 bg-primary p-12 xl:p-20 rounded-lg flex flec-col justify-center">
-					<div>
+				<div className="flex-1 bg-primary p-12 xl:p-20 rounded-lg flex flex-col justify-center">
+					<div className="uppercase text-accent text-lg font-medium mb-2">
 						{data[0].attributes.categories.data[0].attributes.title}{" "}
 						cameras
 					</div>
 
-					<h2>{data[0].attributes.title}</h2>
-					<p>{data[0].attributes.description}</p>
+					<h2 className="h2 mb-4">{data[0].attributes.title}</h2>
+					<p className="mb-12">{data[0].attributes.description}</p>
 
-					<div>
+					<div className="flex items-center gap-x-8">
 						<div>{data[0].attributes.price}</div>
 					</div>
 					<button className="btn btn-accent">Add to cart</button>
