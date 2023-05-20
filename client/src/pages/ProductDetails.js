@@ -18,8 +18,8 @@ const ProductDetails = () => {
 	return (
 		<div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">
 			<div className="container mx-auto">
-				<div>
-					<div>
+				<div className="flex flex-col lg:flex-row gap-[30px]">
+					<div className="flex-1 lg:max-w-[40%] lg:h-[540px] grad rounded-lg flex justify-center items center">
 						<img
 							src={`http://localhost:1337${data[0].attributes.image.data.attributes.url}`}
 							alt=""
@@ -28,7 +28,7 @@ const ProductDetails = () => {
 					</div>
 				</div>
 
-				<div>
+				<div className="flex-1 bg-primary p-12 xl:p-20 rounded-lg flex flec-col justify-center">
 					<div>
 						{data[0].attributes.categories.data[0].attributes.title}{" "}
 						cameras
