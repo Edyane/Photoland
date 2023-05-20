@@ -14,7 +14,16 @@ const ProductDetails = () => {
 	const { data } = useFetch(`/products?populate=*&filters[id][$eq]=${id}`);
 	console.log(data);
 	return (
-		<div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">ProductDetails</div>
+		<div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">
+			<div className="container mx-auto">
+				<div>
+					<div>
+						<img src={data[0].attributes.image.data.attributes.url} alt=""/>
+					</div>
+				</div>
+				<RelatedProducts />
+			</div>
+		</div>
 	);
 };
 
