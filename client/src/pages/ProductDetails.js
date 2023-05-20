@@ -40,6 +40,7 @@ const ProductDetails = () => {
 					<div>
 						<div>{data[0].attributes.price}</div>
 					</div>
+					<button className="btn btn-accent">Add to cart</button>
 				</div>
 				<RelatedProducts />
 			</div>
