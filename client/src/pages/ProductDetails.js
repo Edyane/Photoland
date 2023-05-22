@@ -18,7 +18,14 @@ const ProductDetails = () => {
 	return (
 		<div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">
 			<div className="container mx-auto">
-				<div className="flex flex-col lg:flex-row gap-[30px]">
+
+				<div>
+					<div>
+						<img src="" alt="" />
+					</div>
+				</div>
+				<RelatedProducts />
+				{/* <div className="flex flex-col lg:flex-row gap-[30px] mb-[30px]">
 					<div className="flex-1 lg:max-w-[40%] lg:h-[540px] grad rounded-lg flex justify-center items center">
 						<img
 							src={`http://localhost:1337${data[0].attributes.image.data.attributes.url}`}
@@ -38,11 +45,12 @@ const ProductDetails = () => {
 					<p className="mb-12">{data[0].attributes.description}</p>
 
 					<div className="flex items-center gap-x-8">
-						<div>{data[0].attributes.price}</div>
+						<div className="text-3xl text-accent font-semibold">${data[0].attributes.price}</div>
+						<button className="btn btn-accent">Add to cart</button>
 					</div>
-					<button className="btn btn-accent">Add to cart</button>
+					
 				</div>
-				<RelatedProducts />
+				<RelatedProducts /> */}
 			</div>
 		</div>
 	);
