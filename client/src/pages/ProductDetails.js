@@ -19,22 +19,25 @@ const ProductDetails = () => {
 		<div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">
 			<div className="container mx-auto">
 
-				<div>
+				<div className="flex flex-col lg:flex-row">
 					<div>
-						<img src="" alt="" />
+						<img src={`http://localhost:1337${data[0].attributes.image.data.attributes.url}`}
+							alt=""
+							className="w-full max-w-[65%]"/>
 					</div>
 					
 					<div>
 						<div>
-							title
+							{data[0].attributes.categories.data[0].attributes.title}{" "}
+							cameras
 						</div>
 
-						<h2>h2</h2>
+						<h2>{data[0].attributes.title}</h2>
 
-						<p>{}</p>
+						<p>{data[0].attributes.description}</p>
 
 						<div>
-							<div>price</div>
+							<div>${data[0].attributes.price}</div>
 						</div>
 						<button></button>
 					</div>
