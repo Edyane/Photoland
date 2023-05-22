@@ -23,7 +23,26 @@ const ProductDetails = () => {
 					<div>
 						<img src="" alt="" />
 					</div>
+					
+					<div>
+						<div>
+							title
+						</div>
+
+						<h2>h2</h2>
+
+						<p>{}</p>
+
+						<div>
+							<div>price</div>
+						</div>
+						<button></button>
+					</div>
 				</div>
+
+				
+
+
 				<RelatedProducts />
 				{/* <div className="flex flex-col lg:flex-row gap-[30px] mb-[30px]">
 					<div className="flex-1 lg:max-w-[40%] lg:h-[540px] grad rounded-lg flex justify-center items center">
