@@ -18,8 +18,7 @@ const ProductDetails = () => {
 
 	//Category title
 	const categoryTitle = data[0].attributes.categories.data[0].attributes.title;
-	console.log(categoryTitle);
-
+	
 	return (
 		<div className="mb-16 pt-44 lg:pt-[30px] xl:pt-0">
 			<div className="container mx-auto">
@@ -58,7 +57,7 @@ const ProductDetails = () => {
 					</div>
 				</div>
 
-				<RelatedProducts />
+				<RelatedProducts categoryTitle={categoryTitle} />
 			</div>
 		</div>
 	);
