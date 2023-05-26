@@ -8,7 +8,7 @@ const RelatedProducts = ({ categoryTitle }) => {
 	);
 	return (
     <div className="bg-pink-200 mb-16">
-      <div>
+      <div className="container mx-auto">
         <h2>Related Products</h2>
       </div>
     </div>
