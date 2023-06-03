@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 
 import useFetch from "../hooks/useFetch";
@@ -8,6 +8,7 @@ import RelatedProducts from "../components/RelatedProducts";
 import { CartContext } from "../context/CartContext";
 
 const ProductDetails = () => {
+	const { addToCart } = useContext(CartContext);
 	const { id } = useParams();
 	
 	//get product data base on the id
@@ -50,7 +51,7 @@ const ProductDetails = () => {
 							<div className="text-3xl text-accent font-semibold">
 								${data[0].attributes.price}
 							</div>
-							<button className="btn btn-accent">
+							<button onclick={()=> addToCart()} className="btn btn-accent">
 								Add to cart
 							</button>
 						</div>
