@@ -9,8 +9,10 @@ const CartProvider = ({ children }) => {
 	const [total, setTotal] = useState(0);
 
 	//add to cart 
-	const addToCart = (items, id)=> {
-		console.log(id);
+	const addToCart = (item, id)=> {
+		const itemId = parseInt(id);
+		const newItem = {...item[0], amount: 1};
+		console.log(newItem);
 	};
 
 	return (
