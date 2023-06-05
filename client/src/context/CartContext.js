@@ -12,7 +12,7 @@ const CartProvider = ({ children }) => {
 	const addToCart = (item, id)=> {
 		const itemId = parseInt(id);
 		const newItem = {...item[0], amount: 1};
-		console.log(newItem);
+		setCart([...CartContext, newItem]);
 	};
 
 	return (
