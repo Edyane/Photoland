@@ -13,6 +13,11 @@ const CartProvider = ({ children }) => {
 		const itemId = parseInt(id);
 		const newItem = {...item[0], amount: 1};
 		setCart([...CartContext, newItem]);
+
+		const cartItem = cart.find(item => {
+			return item.id === itemId;
+		})
+		console.log(cart)
 	};
 
 	return (
