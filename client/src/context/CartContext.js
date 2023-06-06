@@ -9,19 +9,19 @@ const CartProvider = ({ children }) => {
 	const [total, setTotal] = useState(0);
 
 	//add to cart 
-	const addToCart = (item, id)=> {
-		const itemId = parseInt(id);
-		const newItem = {...item[0], amount: 1};
-		setCart([...CartContext, newItem]);
+	// const addToCart = (item, id)=> {
+	// 	const itemId = parseInt(id);
+	// 	const newItem = {...item[0], amount: 1};
+	// 	setCart([...CartContext, newItem]);
 
-		const cartItem = cart.find(item => {
-			return item.id === itemId;
-		})
-		console.log(cart)
-	};
+	// 	const cartItem = cart.find(item => {
+	// 		return item.id === itemId;
+	// 	})
+	// 	console.log(cart)
+	// };
 
 	return (
-		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart }}>
+		<CartContext.Provider value={{ isOpen, setIsOpen }}>
 			{children}
 		</CartContext.Provider>
 	);
