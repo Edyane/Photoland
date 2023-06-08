@@ -11,12 +11,13 @@ const CartProvider = ({ children }) => {
 
 	//Add to cart 
 	const addToCart = (item, id) => {
-		console.log('added to cart');
+		const itemID = parseInt(id);
+		console.log(item);
 	}
 
 	
 	return (
-		<CartContext.Provider value={{ isOpen, setIsOpen }}>
+		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart }}>
 			{children}
 		</CartContext.Provider>
 	);
