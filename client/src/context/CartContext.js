@@ -37,8 +37,13 @@ const CartProvider = ({ children }) => {
 		setIsOpen(true);
 	};
 
+	//Remove from cart 
+	const removeFromCart = (id) => {
+		console.log(`item ${id} removed`)
+	}
+
 	return (
-		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart }}>
+		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart }}>
 			{children}
 		</CartContext.Provider>
 	);
