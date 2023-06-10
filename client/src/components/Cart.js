@@ -17,7 +17,7 @@ const Cart = () => {
 				<div onClick={()=> setIsOpen(false)} className="text-4x1 w-20 h-[98px] flex justify-start items-center cursor-pointer">
 					<IoClose />
 				</div>
-				<div>
+				<div className="flex flex-col gap-y-10 px-2">
 					{cart.map((item) => {
 						return <CartItem item={item} key={item.id} />;
 					})}
