@@ -14,7 +14,7 @@ const CartItem = ({ item }) => {
 			</Link>
 			<div className="flex-1">
 				{/* title and remove icon */}
-				<div className="flex gap-x-4">
+				<div className="flex gap-x-4 mb-3 bg-pink-50/10">
 					<Link to={`product/${item.id}`}>
 						{item.attributes.title}
 					</Link>
@@ -24,12 +24,15 @@ const CartItem = ({ item }) => {
 					{/* quantity */}
 				</div>
 
-				<div>
+				<div className="bg-yellow-200/20 flex items-center gap-x-12">
 					<div>
-						<Qty item={item} />
+						<div>
+							<Qty item={item} />
+						</div>
+						<div>$ {item.attributes.price * item.amount}</div>
 					</div>
-					<div>$ {item.attributes.price * item.amount}</div>
 				</div>
+
 				{/* price*/}
 				<div className="text-accent">
 					<span>$ {item.attributes.price} per piece</span>
