@@ -25,11 +25,9 @@ const CartItem = ({ item }) => {
 				</div>
 
 				<div className="bg-yellow-200/20 flex items-center gap-x-12">
-					<div>
-						<div>
-							<Qty item={item} />
-						</div>
-						<div>$ {item.attributes.price * item.amount}</div>
+					<div className="flex gap-x-4 mb-2">
+						<Qty item={item} />
+						<div className="text-accent text-xl">$ {item.attributes.price * item.amount}</div>
 					</div>
 				</div>
 
