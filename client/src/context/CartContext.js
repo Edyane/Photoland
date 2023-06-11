@@ -13,10 +13,10 @@ const CartProvider = ({ children }) => {
 	useEffect(() => {
 		const amount = cart.reduce((a, c) => {
 			return a + c.amount;
-		})
+		}, 0)
 
-		console.log(amount);
-		
+		setItemsAmount(amount);
+
 	}, [cart])
 
 	//Add to cart
@@ -56,7 +56,7 @@ const CartProvider = ({ children }) => {
 	}
 
 	return (
-		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart }}>
+		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount }}>
 			{children}
 		</CartContext.Provider>
 	);
