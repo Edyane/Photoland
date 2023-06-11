@@ -39,7 +39,10 @@ const CartProvider = ({ children }) => {
 
 	//Remove from cart 
 	const removeFromCart = (id) => {
-		console.log(`item ${id} removed`)
+		const newCart = cart.filter((item) => {
+			return item.id !== id;
+		});
+		setCart(newCart);
 	}
 
 	return (
