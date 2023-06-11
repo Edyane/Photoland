@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
 
@@ -8,6 +8,16 @@ const CartProvider = ({ children }) => {
 	const [itemsAmount, setItemsAmount] = useState(0);
 	const [amount, setAmount] = useState(0);
 	const [total, setTotal] = useState(0);
+
+	// cart amount 
+	useEffect(() => {
+		const amount = cart.reduce((a, c) => {
+			return a + c.amount;
+		})
+
+		console.log(amount);
+		
+	}, [cart])
 
 	//Add to cart
 	const addToCart = (item, id) => {
