@@ -47,6 +47,15 @@ const CartProvider = ({ children }) => {
 		setIsOpen(true);
 	};
 
+	//cart amount 
+	useEffect(() => {
+		const amount = cart.reduce((a, c) => {
+			return a + c.amount;
+		})
+
+		console.log(amount);
+	})
+
 	//Remove from cart 
 	const removeFromCart = (id) => {
 		const newCart = cart.filter((item) => {
