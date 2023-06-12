@@ -53,8 +53,8 @@ const CartProvider = ({ children }) => {
 			return a + c.amount;
 		})
 
-		console.log(amount);
-	})
+		setItemsAmount(amount);
+	}, [cart]);
 
 	//Remove from cart 
 	const removeFromCart = (id) => {
