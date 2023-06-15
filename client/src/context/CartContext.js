@@ -56,16 +56,16 @@ const CartProvider = ({ children }) => {
 	// 	setItemsAmount(amount);
 	// }, [cart]);
 
-	// //Remove from cart 
-	// const removeFromCart = (id) => {
-	// 	const newCart = cart.filter((item) => {
-	// 		return item.id !== id;
-	// 	});
-	// 	setCart(newCart);
-	// }
+	//Remove from cart 
+	const removeFromCart = (id) => {
+		const newCart = cart.filter((item) => {
+			return item.id !== id;
+		});
+		setCart(newCart);
+	}
 
 	return (
-		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, itemsAmount }}>
+		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount }}>
 			{children}
 		</CartContext.Provider>
 	);
