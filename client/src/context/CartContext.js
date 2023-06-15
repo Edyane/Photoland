@@ -10,14 +10,14 @@ const CartProvider = ({ children }) => {
 	const [total, setTotal] = useState(0);
 
 	// cart amount 
-	// useEffect(() => {
-	// 	const amount = cart.reduce((a, c) => {
-	// 		return a + c.amount;
-	// 	}, 0)
+	useEffect(() => {
+		const amount = cart.reduce((a, c) => {
+			return a + c.amount;
+		});
 
-	// 	setItemsAmount(amount);
+		console.log(amount);
 
-	// }, [cart])
+	}, [cart]);
 
 	//Add to cart
 	const addToCart = (item, id) => {
