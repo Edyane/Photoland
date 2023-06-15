@@ -10,14 +10,14 @@ const CartProvider = ({ children }) => {
 	const [total, setTotal] = useState(0);
 
 	// cart amount 
-	useEffect(() => {
-		const amount = cart.reduce((a, c) => {
-			return a + c.amount;
-		}, 0)
+	// useEffect(() => {
+	// 	const amount = cart.reduce((a, c) => {
+	// 		return a + c.amount;
+	// 	}, 0)
 
-		setItemsAmount(amount);
+	// 	setItemsAmount(amount);
 
-	}, [cart])
+	// }, [cart])
 
 	//Add to cart
 	const addToCart = (item, id) => {
@@ -48,24 +48,24 @@ const CartProvider = ({ children }) => {
 	};
 
 	//cart amount 
-	useEffect(() => {
-		const amount = cart.reduce((a, c) => {
-			return a + c.amount;
-		})
+	// useEffect(() => {
+	// 	const amount = cart.reduce((a, c) => {
+	// 		return a + c.amount;
+	// 	})
 
-		setItemsAmount(amount);
-	}, [cart]);
+	// 	setItemsAmount(amount);
+	// }, [cart]);
 
-	//Remove from cart 
-	const removeFromCart = (id) => {
-		const newCart = cart.filter((item) => {
-			return item.id !== id;
-		});
-		setCart(newCart);
-	}
+	// //Remove from cart 
+	// const removeFromCart = (id) => {
+	// 	const newCart = cart.filter((item) => {
+	// 		return item.id !== id;
+	// 	});
+	// 	setCart(newCart);
+	// }
 
 	return (
-		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount }}>
+		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, itemsAmount }}>
 			{children}
 		</CartContext.Provider>
 	);
