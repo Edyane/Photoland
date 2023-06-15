@@ -13,7 +13,7 @@ const CartProvider = ({ children }) => {
 	useEffect(() => {
 		const amount = cart.reduce((a, c) => {
 			return a + c.amount;
-		});
+		}, 0);
 
 		console.log(amount);
 
