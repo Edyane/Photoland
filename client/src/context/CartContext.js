@@ -15,8 +15,7 @@ const CartProvider = ({ children }) => {
 			return a + c.amount;
 		}, 0);
 
-		console.log(amount);
-
+		setItemsAmount(amount);
 	}, [cart]);
 
 	//Add to cart
