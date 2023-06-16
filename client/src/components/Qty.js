@@ -8,7 +8,9 @@ const Qty = ({ item }) => {
 	return (
 		<div>
 			{item.amount > 10 ? (
-				<select value={item.amount} className="p-2">Select </select>
+				<select value={item.amount} className="p-2">
+					Select
+				</select>
 			) : (
 				<input
 					className="text-primary placeholder:text-primary h-12
