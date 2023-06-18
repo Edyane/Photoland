@@ -63,6 +63,10 @@ const CartProvider = ({ children }) => {
 		setCart(newCart);
 	}
 
+	const handleInput = (e, id) => {
+		console.log(e.target.value);
+	}
+
 	return (
 		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount }}>
 			{children}
