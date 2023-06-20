@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 
 //context
 import { CartContext } from "../context/CartContext";
 
 const Qty = ({ item }) => {
-	console.log(item);
+	useContext(CartContext)
 	return (
 		<div className="flex gap-x-6 items-center text-primary">
 			{item.amount > 10 ? (
