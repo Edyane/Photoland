@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
 const Qty = ({ item }) => {
-	const = { handleInput } = useContext(CartContext)
+	const { handleInput } = useContext(CartContext)
 	return (
 		<div className="flex gap-x-6 items-center text-primary">
 			{item.amount > 10 ? (
@@ -22,6 +22,7 @@ const Qty = ({ item }) => {
 				</select>
 			) : (
 				<input
+					onBlur={(e) => handleInput(e)}
 					className="text-primary placeholder:text-primary h-12
 	 				rounded-md p-4 w-[120px] outline-accent"
 					type="text"
