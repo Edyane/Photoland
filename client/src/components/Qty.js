@@ -22,7 +22,7 @@ const Qty = ({ item }) => {
 				</select>
 			) : (
 				<input
-					onBlur={(e) => handleInput(e)}
+					onBlur={(e) => handleInput(e, item.id)}
 					className="text-primary placeholder:text-primary h-12
 	 				rounded-md p-4 w-[120px] outline-accent"
 					type="text"
