@@ -65,7 +65,11 @@ const CartProvider = ({ children }) => {
 
 	const handleInput = (e, id) => {
 		const value = parseInt(e.target.value);
-		console.log(value);
+		//find the item in the cart by id 
+		const cartItem = cart.find((item) => {
+			return item.id === id;
+		});
+		console.log(cartItem);
 	}
 
 	return (
