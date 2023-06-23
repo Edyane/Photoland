@@ -64,8 +64,8 @@ const CartProvider = ({ children }) => {
 	}
 
 	const handleInput = (e, id) => {
-		console.log(e.target.value);
-		console.log(id);
+		const value = parseInt(e.target.value);
+		console.log(value);
 	}
 
 	return (
