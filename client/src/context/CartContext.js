@@ -76,6 +76,9 @@ const CartProvider = ({ children }) => {
 					if (isNaN(value)) {
 						setAmount(1);
 						return {...item, amount : 1}
+					} else {
+						setAmount(value);
+						return {...item, amount : value};
 					}
 				}
 			})
