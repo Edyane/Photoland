@@ -70,6 +70,16 @@ const CartProvider = ({ children }) => {
 			return item.id === id;
 		});
 		console.log(cartItem);
+		if (cartItem) {
+			const newCart = cart.map(item => {
+				if (item.id === id) {
+					if (isNaN(value)) {
+						setAmount(1);
+						return {...item, amount : 1}
+					}
+				}
+			})
+		}
 	}
 
 	return (
