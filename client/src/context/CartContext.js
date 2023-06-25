@@ -80,9 +80,13 @@ const CartProvider = ({ children }) => {
 						setAmount(value);
 						return {...item, amount : value};
 					}
+				} else {
+					return item;
 				}
-			})
+			});
+			setCart(newCart);
 		}
+		setIsOpen(true);
 	}
 
 	return (
