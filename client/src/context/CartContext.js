@@ -87,7 +87,8 @@ const CartProvider = ({ children }) => {
 			setCart(newCart);
 		}
 		setIsOpen(true);
-	}
+	};
+	console.log(cart);
 		
 	return (
 		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount, handleInput }}>
