@@ -63,6 +63,7 @@ const CartProvider = ({ children }) => {
 		setCart(newCart);
 	}
 
+	//Hnadle input
 	const handleInput = (e, id) => {
 		const value = parseInt(e.target.value);
 		//find the item in the cart by id 
@@ -88,7 +89,6 @@ const CartProvider = ({ children }) => {
 		}
 		setIsOpen(true);
 	};
-	console.log(cart);
 		
 	return (
 		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount, handleInput }}>
