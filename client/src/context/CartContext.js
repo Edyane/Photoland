@@ -87,7 +87,6 @@ const CartProvider = ({ children }) => {
 			setCart(newCart);
 		}
 		setIsOpen(true);
-		console.log(cartItem);
 	}
 		
 	return (
