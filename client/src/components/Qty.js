@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
 const Qty = ({ item }) => {
-	const { handleInput } = useContext(CartContext)
+	const { handleSelect, handleInput } = useContext(CartContext)
 	return (
 		<div className="flex gap-x-6 items-center text-primary">
 			{item.amount > 10 ? (
