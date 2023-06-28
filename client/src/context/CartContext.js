@@ -92,11 +92,11 @@ const CartProvider = ({ children }) => {
 
 	//Handle select 
 	const handleSelect = (e, id) => {
-		console.log(e.target.)
+		console.log(e.target.value);
 	}
 		
 	return (
-		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount, handleInput }}>
+		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount, handleInput, handleSelect }}>
 			{children}
 		</CartContext.Provider>
 	);
