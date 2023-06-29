@@ -4,11 +4,14 @@ import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
 const Qty = ({ item }) => {
-	const { handleSelect, handleInput } = useContext(CartContext)
+	const { handleSelect, handleInput } = useContext(CartContext);
 	return (
 		<div className="flex gap-x-6 items-center text-primary">
 			{item.amount > 10 ? (
-				<select value={item.amount} className="p-2 rounded-lg w-[100px] h-12 outline-none text-primary">
+				<select
+					value={item.amount}
+					className="p-2 rounded-lg w-[100px] h-12 outline-none text-primary"
+				>
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
