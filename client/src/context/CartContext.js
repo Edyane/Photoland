@@ -92,8 +92,11 @@ const CartProvider = ({ children }) => {
 
 	//Handle select 
 	const handleSelect = (e, id) => {
-		console.log(e.target.value);
-	}
+		const value = e.target.value;
+		const cartItem = cart.find(item => {
+			return item.id === id
+		})
+	};
 		
 	return (
 		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount, handleInput, handleSelect }}>
