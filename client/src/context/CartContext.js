@@ -95,8 +95,14 @@ const CartProvider = ({ children }) => {
 		const value = e.target.value;
 		const cartItem = cart.find(item => {
 			return item.id === id
-		})
-		console.log(cartItem);
+		});
+		if (cartItem) {
+			const newCart = [...cart].map(item => {
+				if (item.id === id) {
+					setAmount(value);
+				}
+			})
+		}
 	};
 		
 	return (
