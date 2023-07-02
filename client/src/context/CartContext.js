@@ -101,6 +101,8 @@ const CartProvider = ({ children }) => {
 				if (item.id === id) {
 					setAmount(value);
 					return {...item, amount:value};
+				} else {
+					return item;
 				}
 			})
 		}
