@@ -100,6 +100,7 @@ const CartProvider = ({ children }) => {
 			const newCart = [...cart].map(item => {
 				if (item.id === id) {
 					setAmount(value);
+					return {...item, amount:value};
 				}
 			})
 		}
