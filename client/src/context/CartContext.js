@@ -104,7 +104,8 @@ const CartProvider = ({ children }) => {
 				} else {
 					return item;
 				}
-			})
+			});
+			setCart(newCart);
 		}
 	};
 		
