@@ -27,6 +27,7 @@ const CartItem = ({ item }) => {
 				</div>
 
 				<div className="flex items-center gap-x-12">
+					{/* {Quantity} */}
 					<div className="flex gap-x-4 mb-2">
 						<Qty item={item} />						
 					</div>
