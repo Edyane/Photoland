@@ -18,6 +18,14 @@ const CartProvider = ({ children }) => {
 		setItemsAmount(amount);
 	}, [cart]);
 
+	//cart total amount
+	useEffect(() => {
+		const total = cart.reduce((a, c) => {
+			return a + c.attributes.price * c.amount;
+		}, 0);
+		setTotal(total);
+	}, [cart])
+
 	//Add to cart
 	const addToCart = (item, id) => {
 		const itemID = parseInt(id);
@@ -45,15 +53,6 @@ const CartProvider = ({ children }) => {
 		// open the cart sidebar
 		setIsOpen(true);
 	};
-
-	//cart amount 
-	// useEffect(() => {
-	// 	const amount = cart.reduce((a, c) => {
-	// 		return a + c.amount;
-	// 	})
-
-	// 	setItemsAmount(amount);
-	// }, [cart]);
 
 	//Remove from cart 
 	const removeFromCart = (id) => {
@@ -92,7 +91,7 @@ const CartProvider = ({ children }) => {
 
 	//Handle select 
 	const handleSelect = (e, id) => {
-		const value = e.target.value;
+		const value = (e.target.value);
 		const cartItem = cart.find(item => {
 			return item.id === id
 		});
@@ -110,7 +109,7 @@ const CartProvider = ({ children }) => {
 	};
 		
 	return (
-		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount, handleInput, handleSelect }}>
+		<CartContext.Provider value={{ isOpen, setIsOpen, addToCart, cart, removeFromCart, itemsAmount, handleInput, handleSelect, total }}>
 			{children}
 		</CartContext.Provider>
 	);
