@@ -61,7 +61,7 @@ const CartProvider = ({ children }) => {
 			return item.id !== id;
 		});
 		setCart(newCart);
-	}
+	};
 
 	//Handle input
 	const handleInput = (e, id) => {
@@ -76,10 +76,10 @@ const CartProvider = ({ children }) => {
 				if (item.id === id) {
 					if (isNaN(value)) {
 						setAmount(1);
-						return {...item, amount : 1}
+						return {...item, amount: 1}
 					} else {
 						setAmount(value);
-						return {...item, amount : value};
+						return {...item, amount: value};
 					}
 				} else {
 					return item;
