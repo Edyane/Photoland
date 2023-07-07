@@ -24,13 +24,13 @@ const Footer = () => {
 					</button>
 				</form>
 				{/* links */}
-				<div className="text-base text-white/60 flex gap-x-6 capitalize max-w-max mx-auto">
+				<div className="text-base text-white/60 flex gap-x-6 capitalize max-w-max mx-auto mb-9">
 					<a href='#' className="hover:text-white transition all">Returns policy</a>
 					<a href='#' className="hover:text-white transition all">Track your order</a>
 					<a href='#' className="hover:text-white transition all">Shipping and delivery</a>
 				</div>
 				{/* socials */}
-				<div>
+				<div className="flex gap-x-6 max-w-max mx-auto text-lg mb-16">
 					<a href="#" className="hover:text-white transition all">
 						<FaYoutube />
 					</a>
