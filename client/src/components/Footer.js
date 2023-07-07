@@ -5,15 +5,15 @@ const Footer = () => {
 	return (
 		<footer className="pt-16" bg-primary>
 			<div className="container mx-auto">
-				<div>
-					<h2>Subscribe to our newsletter</h2>
-					<p>
+				<div className="text-center">
+					<h2 className="h2 uppercase mb-6 font-semibold">Subscribe to our newsletter</h2>
+					<p className="text-white/70">
 						Be the first to get the latest news about trends,
 						promotions and much more!
 					</p>
 				</div>
 				{/* form */}
-				<form>
+				<form className="w-full max-w-3x1 mx-auto flex flex-col md:flex-row gap-5 my-14">
 					<input
 						type="text"
 						placeholder="Your email adress"
@@ -24,7 +24,7 @@ const Footer = () => {
 					</button>
 				</form>
 				{/* links */}
-				<div>
+				<div className="text-base text-white/60 flex gap-x-6 capitalize max-w-max mx-auto">
 					<a href='#' className="hover:text-white transition all">Returns policy</a>
 					<a href='#' className="hover:text-white transition all">Track your order</a>
 					<a href='#' className="hover:text-white transition all">Shipping and delivery</a>
