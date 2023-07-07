@@ -27,7 +27,7 @@ const Footer = () => {
 				<div>
 					<a href='#' className="hover:text-white transition all">Returns policy</a>
 					<a href='#' className="hover:text-white transition all">Track your order</a>
-					<a href='#' className="hover:text-white transition all">Shipping & delivery</a>
+					<a href='#' className="hover:text-white transition all">Shipping and delivery</a>
 				</div>
 				{/* socials */}
 				<div>
@@ -46,6 +46,11 @@ const Footer = () => {
 					<a href="#" className="hover:text-white transition all">
 						<FaFacebook />
 					</a>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>Copyright &copy; Photoland 2023. All rights reseverd.</div>
 				</div>
 			</div>
 		</footer>
