@@ -23,7 +23,30 @@ const Footer = () => {
 						Join
 					</button>
 				</form>
-				{/* lines */}
+				{/* links */}
+				<div>
+					<a href='#' className="hover:text-white transition all">Returns policy</a>
+					<a href='#' className="hover:text-white transition all">Track your order</a>
+					<a href='#' className="hover:text-white transition all">Shipping & delivery</a>
+				</div>
+				{/* socials */}
+				<div>
+					<a href="#" className="hover:text-white transition all">
+						<FaYoutube />
+					</a>
+
+					<a href="#" className="hover:text-white transition all">
+						<FaInstagram />
+					</a>
+
+					<a href="#" className="hover:text-white transition all">
+						<FaTwitter />
+					</a>
+
+					<a href="#" className="hover:text-white transition all">
+						<FaFacebook />
+					</a>
+				</div>
 			</div>
 		</footer>
 	);
