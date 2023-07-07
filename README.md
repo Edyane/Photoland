@@ -1,5 +1,7 @@
 # Photoland E-commerce
 
+## ⚡ Tecnologias utilizadas:
+
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -13,9 +15,9 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [] Integração com Stripe;
-- [] Alteração no estilo;
-- [] Documentação;
+- [x] Integração com Stripe;
+- [x] Alteração no estilo;
+- [x] Documentação;
 
 ## 💻 Pré-requisitos
 
@@ -24,9 +26,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você tem uma máquina `<Windows / Linux / Mac>`. 
 * Você instalou a versão mais recente ou LTS do `<Node.js>`
 
-## 🚀 Instalando <Photoland_E-commerce>
+## 🚀 Instalando
 
-Para instalar o <Photoland_E-commerce>, siga estas etapas:
+Para instalar o projeto, siga estas etapas:
 
 Windows:
 ```
@@ -34,4 +36,4 @@ Windows:
 
 <npm start>
 
-[⬆ Voltar ao topo](#Photoland E-commerce)<br>
+Abra http://localhost:3000 para ver o projeto em seu browser.
