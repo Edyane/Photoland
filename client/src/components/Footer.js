@@ -48,9 +48,10 @@ const Footer = () => {
 					</a>
 				</div>
 			</div>
-			<div>
-				<div>
-					<div>Copyright &copy; Photoland 2023. All rights reseverd.</div>
+			{/* copyright */}
+			<div className="py-10 border-t border-t-white/10">
+				<div className="container mx-auto">
+					<div className="text-center text-sm text-white/60">Copyright &copy; Photoland 2023. All rights reseverd.</div>
 				</div>
 			</div>
 		</footer>
