@@ -1,19 +1,18 @@
 # Photoland E-commerce
 
-## ⚡ Tecnologias utilizadas:
+<img src="photoland.png" alt="exemplo imagem">
 
-<div align="center">
+> O projeto em tela foi idealizado por Cristian Mihai em seu canal na plataforma YouTube: https://www.youtube.com/watch?v=zMUw7IUfQEk&t=14099s. Fiz passo a passo para colocar em prática conceitos teóricos aprendidos em âmbito acadêmico e criei esse repositório para compartilhar o resultado.
+
+## ⚡ Tecnologias utilizadas
+
+
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Strapi](https://img.shields.io/badge/strapi-%232E7EEA.svg?style=for-the-badge&logo=strapi&logoColor=white)
 
-</div>
-
-<img src="photoland.png" alt="exemplo imagem">
-
-> O projeto em tela foi idealizado por Cristian Mihai em seu canal na plataforma YouTube: https://www.youtube.com/watch?v=zMUw7IUfQEk&t=14099s. Fiz passo a passo para colocar em prática conceitos teóricos aprendidos em âmbito acadêmico e criei esse repositório para compartilhar o resultado.
 
 ## 💻 Pré-requisitos
 
